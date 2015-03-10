@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @request_blackboard.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @request_blackboard.description %>
+</p>
+
+<p>
+  <strong>Totalprice:</strong>
+  <%= @request_blackboard.totalPrice %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @request_blackboard.user_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @request_blackboard.category_id %>
+</p>
+
+<p>
+  <strong>Condition:</strong>
+  <%= @request_blackboard.condition %>
+</p>
+
+<%= link_to 'Edit', edit_request_blackboard_path(@request_blackboard) %> |
+<%= link_to 'Back', request_blackboards_path %>

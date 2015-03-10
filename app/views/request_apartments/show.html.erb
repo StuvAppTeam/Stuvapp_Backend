@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @request_apartment.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @request_apartment.description %>
+</p>
+
+<p>
+  <strong>Totalprice:</strong>
+  <%= @request_apartment.totalPrice %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @request_apartment.user_id %>
+</p>
+
+<p>
+  <strong>Furnished:</strong>
+  <%= @request_apartment.furnished %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @request_apartment.type %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @request_apartment.size %>
+</p>
+
+<p>
+  <strong>Phase:</strong>
+  <%= @request_apartment.phase %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @request_apartment.city %>
+</p>
+
+<p>
+  <strong>Zipcode:</strong>
+  <%= @request_apartment.zipcode %>
+</p>
+
+<%= link_to 'Edit', edit_request_apartment_path(@request_apartment) %> |
+<%= link_to 'Back', request_apartments_path %>

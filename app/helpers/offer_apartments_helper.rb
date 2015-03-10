@@ -1,0 +1,2 @@
+module OfferApartmentsHelper
+end

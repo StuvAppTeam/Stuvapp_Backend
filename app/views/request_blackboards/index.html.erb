@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Request Blackboards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Totalprice</th>
+      <th>User</th>
+      <th>Category</th>
+      <th>Condition</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @request_blackboards.each do |request_blackboard| %>
+      <tr>
+        <td><%= request_blackboard.title %></td>
+        <td><%= request_blackboard.description %></td>
+        <td><%= request_blackboard.totalPrice %></td>
+        <td><%= request_blackboard.user_id %></td>
+        <td><%= request_blackboard.category_id %></td>
+        <td><%= request_blackboard.condition %></td>
+        <td><%= link_to 'Show', request_blackboard %></td>
+        <td><%= link_to 'Edit', edit_request_blackboard_path(request_blackboard) %></td>
+        <td><%= link_to 'Destroy', request_blackboard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Request blackboard', new_request_blackboard_path %>

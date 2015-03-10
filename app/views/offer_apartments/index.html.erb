@@ -1,0 +1,67 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Offer Apartments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Totalprice</th>
+      <th>Image</th>
+      <th>Street</th>
+      <th>City</th>
+      <th>Zipcode</th>
+      <th>User</th>
+      <th>Size</th>
+      <th>Rent</th>
+      <th>Additionalcost</th>
+      <th>Phase</th>
+      <th>Deposit</th>
+      <th>Type</th>
+      <th>Movein</th>
+      <th>Furnished</th>
+      <th>Internet</th>
+      <th>Other</th>
+      <th>Parking</th>
+      <th>Rooms</th>
+      <th>Smoking</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @offer_apartments.each do |offer_apartment| %>
+      <tr>
+        <td><%= offer_apartment.title %></td>
+        <td><%= offer_apartment.description %></td>
+        <td><%= offer_apartment.totalPrice %></td>
+        <td><%= offer_apartment.image_id %></td>
+        <td><%= offer_apartment.street %></td>
+        <td><%= offer_apartment.city %></td>
+        <td><%= offer_apartment.zipcode %></td>
+        <td><%= offer_apartment.user_id %></td>
+        <td><%= offer_apartment.size %></td>
+        <td><%= offer_apartment.rent %></td>
+        <td><%= offer_apartment.additionalCost %></td>
+        <td><%= offer_apartment.phase %></td>
+        <td><%= offer_apartment.deposit %></td>
+        <td><%= offer_apartment.type %></td>
+        <td><%= offer_apartment.moveIn %></td>
+        <td><%= offer_apartment.furnished %></td>
+        <td><%= offer_apartment.internet %></td>
+        <td><%= offer_apartment.other %></td>
+        <td><%= offer_apartment.parking %></td>
+        <td><%= offer_apartment.rooms %></td>
+        <td><%= offer_apartment.smoking %></td>
+        <td><%= link_to 'Show', offer_apartment %></td>
+        <td><%= link_to 'Edit', edit_offer_apartment_path(offer_apartment) %></td>
+        <td><%= link_to 'Destroy', offer_apartment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Offer apartment', new_offer_apartment_path %>

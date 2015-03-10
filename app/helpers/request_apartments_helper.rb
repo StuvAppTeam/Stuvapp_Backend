@@ -1,0 +1,2 @@
+module RequestApartmentsHelper
+end

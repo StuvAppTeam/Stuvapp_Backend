@@ -1,0 +1,25 @@
+<%= form_for(@mage) do |f| %>
+  <% if @mage.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mage.errors.count, "error") %> prohibited this mage from being saved:</h2>
+
+      <ul>
+      <% @mage.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :path %><br>
+    <%= f.text_field :path %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

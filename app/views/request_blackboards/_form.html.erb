@@ -1,0 +1,41 @@
+<%= form_for(@request_blackboard) do |f| %>
+  <% if @request_blackboard.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@request_blackboard.errors.count, "error") %> prohibited this request_blackboard from being saved:</h2>
+
+      <ul>
+      <% @request_blackboard.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :totalPrice %><br>
+    <%= f.text_field :totalPrice %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :category_id %><br>
+    <%= f.number_field :category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :condition %><br>
+    <%= f.check_box :condition %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

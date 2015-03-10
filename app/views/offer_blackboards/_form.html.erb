@@ -1,0 +1,57 @@
+<%= form_for(@offer_blackboard) do |f| %>
+  <% if @offer_blackboard.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@offer_blackboard.errors.count, "error") %> prohibited this offer_blackboard from being saved:</h2>
+
+      <ul>
+      <% @offer_blackboard.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :totalPrice %><br>
+    <%= f.text_field :totalPrice %>
+  </div>
+  <div class="field">
+    <%= f.label :image_id %><br>
+    <%= f.number_field :image_id %>
+  </div>
+  <div class="field">
+    <%= f.label :street %><br>
+    <%= f.text_field :street %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :zipcode %><br>
+    <%= f.number_field :zipcode %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :category_id %><br>
+    <%= f.text_field :category_id %>
+  </div>
+  <div class="field">
+    <%= f.label :condition %><br>
+    <%= f.check_box :condition %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

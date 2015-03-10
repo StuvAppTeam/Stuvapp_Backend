@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  totalPrice: 1.5
+  image_id: 1
+  street: MyString
+  city: MyString
+  zipcode: 1
+  user_id: 1
+  size: 1
+  rent: 1.5
+  additionalCost: 1.5
+  phase: MyString
+  deposit: 1.5
+  type: 
+  moveIn: 2015-03-10
+  furnished: false
+  internet: false
+  other: MyString
+  parking: MyString
+  rooms: 1
+  smoking: false
+
+two:
+  title: MyString
+  description: MyString
+  totalPrice: 1.5
+  image_id: 1
+  street: MyString
+  city: MyString
+  zipcode: 1
+  user_id: 1
+  size: 1
+  rent: 1.5
+  additionalCost: 1.5
+  phase: MyString
+  deposit: 1.5
+  type: 
+  moveIn: 2015-03-10
+  furnished: false
+  internet: false
+  other: MyString
+  parking: MyString
+  rooms: 1
+  smoking: false

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Request Apartments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Totalprice</th>
+      <th>User</th>
+      <th>Furnished</th>
+      <th>Type</th>
+      <th>Size</th>
+      <th>Phase</th>
+      <th>City</th>
+      <th>Zipcode</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @request_apartments.each do |request_apartment| %>
+      <tr>
+        <td><%= request_apartment.title %></td>
+        <td><%= request_apartment.description %></td>
+        <td><%= request_apartment.totalPrice %></td>
+        <td><%= request_apartment.user_id %></td>
+        <td><%= request_apartment.furnished %></td>
+        <td><%= request_apartment.type %></td>
+        <td><%= request_apartment.size %></td>
+        <td><%= request_apartment.phase %></td>
+        <td><%= request_apartment.city %></td>
+        <td><%= request_apartment.zipcode %></td>
+        <td><%= link_to 'Show', request_apartment %></td>
+        <td><%= link_to 'Edit', edit_request_apartment_path(request_apartment) %></td>
+        <td><%= link_to 'Destroy', request_apartment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Request apartment', new_request_apartment_path %>

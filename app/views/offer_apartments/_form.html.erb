@@ -1,0 +1,101 @@
+<%= form_for(@offer_apartment) do |f| %>
+  <% if @offer_apartment.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@offer_apartment.errors.count, "error") %> prohibited this offer_apartment from being saved:</h2>
+
+      <ul>
+      <% @offer_apartment.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :totalPrice %><br>
+    <%= f.text_field :totalPrice %>
+  </div>
+  <div class="field">
+    <%= f.label :image_id %><br>
+    <%= f.number_field :image_id %>
+  </div>
+  <div class="field">
+    <%= f.label :street %><br>
+    <%= f.text_field :street %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :zipcode %><br>
+    <%= f.number_field :zipcode %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br>
+    <%= f.number_field :user_id %>
+  </div>
+  <div class="field">
+    <%= f.label :size %><br>
+    <%= f.number_field :size %>
+  </div>
+  <div class="field">
+    <%= f.label :rent %><br>
+    <%= f.text_field :rent %>
+  </div>
+  <div class="field">
+    <%= f.label :additionalCost %><br>
+    <%= f.text_field :additionalCost %>
+  </div>
+  <div class="field">
+    <%= f.label :phase %><br>
+    <%= f.text_field :phase %>
+  </div>
+  <div class="field">
+    <%= f.label :deposit %><br>
+    <%= f.text_field :deposit %>
+  </div>
+  <div class="field">
+    <%= f.label :type %><br>
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :moveIn %><br>
+    <%= f.date_select :moveIn %>
+  </div>
+  <div class="field">
+    <%= f.label :furnished %><br>
+    <%= f.check_box :furnished %>
+  </div>
+  <div class="field">
+    <%= f.label :internet %><br>
+    <%= f.check_box :internet %>
+  </div>
+  <div class="field">
+    <%= f.label :other %><br>
+    <%= f.text_field :other %>
+  </div>
+  <div class="field">
+    <%= f.label :parking %><br>
+    <%= f.text_field :parking %>
+  </div>
+  <div class="field">
+    <%= f.label :rooms %><br>
+    <%= f.number_field :rooms %>
+  </div>
+  <div class="field">
+    <%= f.label :smoking %><br>
+    <%= f.check_box :smoking %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  totalPrice: 1.5
+  user_id: 1
+  furnished: false
+  type: 
+  size: 1
+  phase: MyString
+  city: MyString
+  zipcode: 1
+
+two:
+  title: MyString
+  description: MyString
+  totalPrice: 1.5
+  user_id: 1
+  furnished: false
+  type: 
+  size: 1
+  phase: MyString
+  city: MyString
+  zipcode: 1
