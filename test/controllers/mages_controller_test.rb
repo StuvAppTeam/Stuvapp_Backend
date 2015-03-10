@@ -2,13 +2,13 @@ require 'test_helper'
 
 class MagesControllerTest < ActionController::TestCase
   setup do
-    @mage = mages(:one)
+    @image = mages(:one)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:mages)
+    assert_not_nil assigns(:Images)
   end
 
   test "should get new" do
@@ -16,32 +16,32 @@ class MagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create mage" do
-    assert_difference('Mage.count') do
-      post :create, mage: { path: @mage.path, title: @mage.title }
+  test "should create image" do
+    assert_difference('Image.count') do
+      post :create, image: { path: @image.path, title: @image.title }
     end
 
-    assert_redirected_to mage_path(assigns(:mage))
+    assert_redirected_to mage_path(assigns(:image))
   end
 
-  test "should show mage" do
-    get :show, id: @mage
+  test "should show image" do
+    get :show, id: @image
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @mage
+    get :edit, id: @image
     assert_response :success
   end
 
-  test "should update mage" do
-    patch :update, id: @mage, mage: { path: @mage.path, title: @mage.title }
-    assert_redirected_to mage_path(assigns(:mage))
+  test "should update image" do
+    patch :update, id: @image, image: { path: @image.path, title: @image.title }
+    assert_redirected_to mage_path(assigns(:image))
   end
 
-  test "should destroy mage" do
-    assert_difference('Mage.count', -1) do
-      delete :destroy, id: @mage
+  test "should destroy image" do
+    assert_difference('Image.count', -1) do
+      delete :destroy, id: @image
     end
 
     assert_redirected_to mages_path

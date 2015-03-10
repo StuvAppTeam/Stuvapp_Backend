@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :mages
+  resources :images
   resources :offer_apartments
   resources :offer_blackboards
   resources :users
