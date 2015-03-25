@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails StuvApp_Backend: development" uuid="745c668b-0692-471d-a4ac-3809ca91792a">
+      <user-name>root</user-name>
+      <schema-pattern>StuvApp_Backend_development.*</schema-pattern>
+      <default-schemas>StuvApp_Backend_development.*</default-schemas>
+    </data-source>
+    <data-source name="Rails StuvApp_Backend: test" uuid="755b78ed-f26f-4f68-a6fe-40908187ddfd">
+      <first-sync>true</first-sync>
+      <user-name>root</user-name>
+    </data-source>
+    <data-source name="Rails StuvApp_Backend: production" uuid="76cfe21a-7b15-4c7b-bd7f-27331cd95898">
+      <first-sync>true</first-sync>
+      <user-name>StuvApp_Backend</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddff9dffedfffdffcdfebdffadffadff5dfe8dfebdfe9dfe1dfefdfe4dfeedff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>
