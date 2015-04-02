@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :admin_users
+  ActiveAdmin.routes(self)
   devise_for :users, :controllers => {  :omniauth_callbacks => "omniauth_callbacks", :passwords => "passwords" }
   resources :images
   resources :offer_apartments

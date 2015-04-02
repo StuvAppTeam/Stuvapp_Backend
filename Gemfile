@@ -20,6 +20,9 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'devise'
 gem 'omniauth'
 
+# Gemfile in Rails >= 4.0
+gem 'activeadmin', '~> 1.0.0.pre1'
+
 # gem 'omniauth-Facebook'
 gem 'omniauth-facebook'
 # Use jquery as the JavaScript library
