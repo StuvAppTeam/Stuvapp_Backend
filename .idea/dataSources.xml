@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3857105078">
+  <component name="DataSourceManagerImpl" format="xml" hash="2189131199">
     <data-source source="LOCAL" name="Rails StuvApp_Backend: development" uuid="745c668b-0692-471d-a4ac-3809ca91792a">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
